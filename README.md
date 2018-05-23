@@ -70,7 +70,7 @@ febuild actname prod
    所有的css都需要进行配置，都需要经过压缩和md5命名
    
       页面js依赖配置
-   ![页面js依赖配置](https://git.oschina.net/uploads/images/2017/0721/171826_2da1204d_57092.png "屏幕截图.png")
+   ![页面js依赖配置](https://github.com/simona1989/readme-images/blob/master/pic1.png)
 
    1）需要压缩混淆的js模块：fastclick-jquery
       业务js模块，index.js
