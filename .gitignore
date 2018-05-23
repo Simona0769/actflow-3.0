@@ -1,0 +1,17 @@
+## npm 包依赖不提交
+node_modules/
+
+## 打包后的文件不提交
+dist/
+dist.zip
+
+# sass编译后的css不提交
+css/
+
+## 代码规范检查的配置不提交
+.csslintrc
+.editorconfig
+.jscsrc
+.jshintrc
+.scss-lint.yml
+.DS_Store
