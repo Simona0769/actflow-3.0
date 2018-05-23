@@ -64,7 +64,7 @@ febuild actname prod
 
 5、useref配置说明
  
-   ![页面css依赖配置](https://git.oschina.net/uploads/images/2017/0721/171641_cc5cdae4_57092.png "屏幕截图.png")
+   ![页面css依赖配置](https://github.com/simona1989/readme-images/blob/master/pic0.png)
 
    所有的css都需要进行配置，都需要经过压缩和md5命名
 
