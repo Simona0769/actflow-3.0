@@ -44,6 +44,7 @@ febuild actname prod
 
 2、高清屏幕适配问题
    1）其中使用rem做高清屏幕适配方案（默认不采用根据dpr缩放viewport，若有此需求，请自行把在header中引入的adapt.js改成adaptScale.js，scss文件中引入的_func.scss改为_funcAdapt.scss）
+   
    2）若设计稿提供的是普通的宽度为750px的，那么可以直接使用pxToRem，例如：在写scss的时候，量取的高度为90px，写成pxToRem(90px)即可；字体大小看设计师的要求，一般字体要随着屏幕尺寸的变化而变化，那么font-size也可以用pxToRem；若设计师要求不管在什么尺寸的屏幕下，字体保留不变，那么请直接使用px；
    3）若提供的设计稿提供的不是标准的750px：那么需要去修改src/sass/_func.scss，$base-font-size = 设计稿宽度 ／ 32计算出 基本字体大小；然后按照第2部使用pxToRem即可
 
