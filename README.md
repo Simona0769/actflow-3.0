@@ -12,9 +12,9 @@ $ chmod 755 bin/febuild.js
 $ sudo npm link     
 2）windows下： 找到 根目录下bin/febuild.js 以及 bin/fecreate.js，把第一行修改为 “#! /usr/bin/env node”
 再执行以下命令   
-$ sudo npm link   
+npm link   
 
-注意：若报错，请查看是否翻墙，没翻墙的童鞋，请自行用镜像；     
+注意：若 npm link 报错，请查看是否翻墙，没翻墙的童鞋，请自行用镜像；     
 
 # 生成新的活动
 
