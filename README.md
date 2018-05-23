@@ -12,7 +12,10 @@ $ npm install
 $ chmod 755 bin/fecreate.js   
 $ chmod 755 bin/febuild.js  
 
-$ sudo npm link
+$ sudo npm link   
+注意：    
+1）windows请直接跑npm link；    
+2）若报错，请查看是否翻墙，没的童鞋，请自行用镜像；   
 
 # 生成新的活动
 
