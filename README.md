@@ -9,7 +9,7 @@ $ npm install
 再执行以下命令（设置文件权限）  
 $ chmod 755 bin/fecreate.js   
 $ chmod 755 bin/febuild.js  
-$ sudo npm link 
+$ sudo npm link     
 2）windows下： 找到 根目录下bin/febuild.js 以及 bin/fecreate.js，把第一行修改为 “#! /usr/bin/env node”
 再执行以下命令   
 $ sudo npm link   
