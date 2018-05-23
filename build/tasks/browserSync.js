@@ -3,14 +3,14 @@ import { style } from './style';
 
 export function browser(gulp, plugin, config) {
     return plugin.browserSync({
+        open: 'external',
         server: {
             // baseDir: [config.act, '../src/lib']
             baseDir: config.act,
             routes: {
                 '/lib': '../src/lib'
             }
-        },
-        host: '0.0.0.0'
+        }
     });
 }
 
