@@ -5,17 +5,16 @@ $ npm install
 
 # 环境配置
 1）macOS下：命令行输入 which node， 查看node所在位置，例如：作者本机node位置为：/usr/local/bin/node   
-那么找到 根目录下bin/febuild.js 以及 bin/fecreate.js，把第一行修改为 “ #!/usr/local/bin/node ”      
-2）windows下： 找到 根目录下bin/febuild.js 以及 bin/fecreate.js，把第一行修改为 “#! /usr/bin/env node”
-
+那么找到 根目录下bin/febuild.js 以及 bin/fecreate.js，把第一行修改为 “ #!/usr/local/bin/node ”    
 再执行以下命令（设置文件权限）  
 $ chmod 755 bin/fecreate.js   
 $ chmod 755 bin/febuild.js  
-
+$ sudo npm link 
+2）windows下： 找到 根目录下bin/febuild.js 以及 bin/fecreate.js，把第一行修改为 “#! /usr/bin/env node”
+再执行以下命令   
 $ sudo npm link   
-注意：    
-1）windows请直接跑npm link；    
-2）若报错，请查看是否翻墙，没的童鞋，请自行用镜像；   
+
+注意：若报错，请查看是否翻墙，没翻墙的童鞋，请自行用镜像；     
 
 # 生成新的活动
 
