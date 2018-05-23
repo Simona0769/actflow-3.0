@@ -7,7 +7,7 @@ $ npm install
 命令行输入 which node， 查看node所在位置，例如：作者本机node位置为：/usr/local/bin/node   
 那么找到 根目录下bin/febuild.js 以及 bin/fecreate.js，把第一行修改为 “ #!/usr/local/bin/node ”   
 
-再执行以下命令（设置文件权限）      
+再执行以下命令（设置文件权限）  
 $ chmod 755 bin/fecreate.js   
 $ chmod 755 bin/febuild.js  
 
