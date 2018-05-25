@@ -14,7 +14,7 @@ import { spriteTask } from './tasks/sprite';
 const actPath = `../src/activities/${ process.env.PJ_PATH }/`;
 
 let gulpPlugin = gulpLoadPlugins({
-        pattern: ['gulp-*', 'gulp.*', 'del', 'browser-sync', 'merge-stream', 'vinyl-buffer'],
+        pattern: ['gulp-*', 'gulp.*', 'del', 'browser-sync', 'merge-stream', 'vinyl-buffer', 'imagemin-pngquant'],
         lazy: true
     });
 
