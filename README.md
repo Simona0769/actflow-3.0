@@ -93,10 +93,10 @@ febuild actname prod
 
      styles的详细参数说明   
 
-     ![styles的详细参数说明](https://github.com/simona1989/readme-images/blob/master/pic3.png)  
+   ![styles的详细参数说明](https://github.com/simona1989/readme-images/blob/master/pic3.png)  
 
      scripts的详细参数说明   
 
-     ![scripts的详细参数说明](https://github.com/simona1989/readme-images/blob/master/pic4.png)
+   ![scripts的详细参数说明](https://github.com/simona1989/readme-images/blob/master/pic4.png)
 
 
