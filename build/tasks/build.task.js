@@ -3,6 +3,8 @@ import { style } from './style';
 import { ejs } from './ejs';
 import { useref } from './useref';
 import { copyJs } from './copyJs';
+import { copyMedia } from './copyMedia';
+import { imagemin } from './imagemin';
 
 export function buildTask(gulp, plugin, config) {
     let cleanFile = () => {
@@ -19,7 +21,13 @@ export function buildTask(gulp, plugin, config) {
     };
     let copyJsTask = () => {
         return copyJs(gulp, plugin, config);
-    }
+    };
+    let imageminTask = () => {
+        return imagemin(gulp, plugin, config);
+    };
+    let copyMediaTask = () => {
+        return copyMedia(gulp, plugin, config);
+    };
 
-    return gulp.series(cleanFile, gulp.parallel(styleCompile, ejstask), gulp.parallel(userefTask, copyJsTask));
+    return gulp.series(cleanFile, gulp.parallel(styleCompile, ejstask), gulp.parallel(userefTask, copyJsTask, imageminTask, copyMediaTask));
 }

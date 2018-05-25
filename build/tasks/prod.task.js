@@ -4,6 +4,8 @@ import { ejs } from './ejs';
 import { useref } from './useref';
 import { revJs } from './revJs';
 import { revHtml } from './revHtml';
+import { imagemin } from './imagemin';
+import { copyMedia } from './copyMedia';
 
 export function prodTask(gulp, plugin, config) {
     let cleanFile = () => {
@@ -24,6 +26,12 @@ export function prodTask(gulp, plugin, config) {
     let revHtmlTask = () => {
         return revHtml(gulp, plugin, config);
     };
+    let imageminTask = () => {
+        return imagemin(gulp, plugin, config);
+    };
+    let copyMediaTask = () => {
+        return copyMedia(gulp, plugin, config);
+    };
 
-    return gulp.series(cleanFile, gulp.parallel(styleCompile, ejstask), userefTask, revJsTask, revHtmlTask);
+    return gulp.series(cleanFile, gulp.parallel(styleCompile, ejstask, imageminTask, copyMediaTask), userefTask, revJsTask, revHtmlTask);
 }
