@@ -14,12 +14,12 @@ import { spriteTask } from './tasks/sprite';
 const actPath = `../src/activities/${ process.env.PJ_PATH }/`;
 
 let gulpPlugin = gulpLoadPlugins({
-        pattern: ['gulp-*', 'gulp.*', 'browser-sync', 'merge-stream', 'vinyl-buffer'],
+        pattern: ['gulp-*', 'gulp.*', 'del', 'browser-sync', 'merge-stream', 'vinyl-buffer'],
         lazy: true
     });
 
 const sprite = () => {
-        return spriteTask(gulp, gulpPlugin, getConfig({isDev: true, basePath: actPath }));
+        return spriteTask(gulp, gulpPlugin, getConfig({isDev: false, basePath: actPath }));
     }
 
 const dev = serve(gulp, gulpPlugin, getConfig({isDev: true, basePath: actPath }));
