@@ -97,6 +97,9 @@ febuild actname prod
 
      scripts的详细参数说明   
 
-   ![scripts的详细参数说明](https://github.com/simona1989/readme-images/blob/master/pic4.png)
+   ![scripts的详细参数说明](https://github.com/simona1989/readme-images/blob/master/pic4.png)    
 
+7、关于压缩图片问题
+   由于插件的压缩率太低，所以作者把压缩图片的代码注释掉了，只做拷贝用。     
+   建议开发人员手动在线压缩后放到images再使用图片。    
 
