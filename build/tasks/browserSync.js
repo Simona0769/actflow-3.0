@@ -1,5 +1,6 @@
 'use strict';
 import { style } from './style';
+import { ejs } from './ejs';
 
 export function browser(gulp, plugin, config) {
     return plugin.browserSync({
@@ -20,6 +21,10 @@ export function watch(gulp, plugin, config) {
     let styleCompile = () => {
         return style(gulp, plugin, config);
     }
-    gulp.watch(config.act + '/sass/*.scss', styleCompile);
+    let ejsCompile = () => {
+        return ejs(gulp, plugin, config);
+    }
+    gulp.watch(`${config.act}/sass/*.scss`, styleCompile);
+    gulp.watch(`${config.act}/templates/**/*.ejs`, ejsCompile);
     gulp.watch(['*.html', 'html/**/*.html', 'css/**/*.css', 'js/**/*.js'], { cwd: config.act }).on('change', plugin.browserSync.reload)
 }
