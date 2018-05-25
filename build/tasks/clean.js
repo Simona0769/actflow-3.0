@@ -1,8 +1,6 @@
 'use strict';
 
-import del from 'del';
-
-export function clean(config) {
+export function clean(gulp, plugin, config) {
     // let cleanPath = config.path + (config.isDev ? 'css' : '') + '/';
-    return del([`${config.act}/css`,  `${config.act}/dist`], {force: true});
+    return plugin.del([`${config.act}/css`,  `${config.act}/dist`], {force: true});
 }
