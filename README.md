@@ -80,3 +80,22 @@ febuild actname prod
 
       建议在活动项目里，js下的关于业务逻辑的js不要压缩混淆，否则整合的后台会看不懂
 
+6、如何使用给定的ejs模版   
+   1）直接在ejs里进行开发   
+   2）配置header和footer 参数    
+
+   ![ejs模板header和footer参数配置](https://github.com/simona1989/readme-images/blob/master/pic2.png)  
+
+   include的第一个参数是 模板所在的相对路径；    
+   第二个参数是 传递给模板的参数，其中，relative： 是相对于js的的相对路径； styles是css的链接， scripts是js的链接。    
+   styles和scripts都是一个数组
+
+     styles的详细参数说明   
+
+     ![styles的详细参数说明](https://github.com/simona1989/readme-images/blob/master/pic3.png)  
+
+     scripts的详细参数说明   
+
+     ![scripts的详细参数说明](https://github.com/simona1989/readme-images/blob/master/pic4.png)
+
+
