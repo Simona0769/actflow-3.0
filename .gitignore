@@ -1,6 +1,9 @@
 ## npm 包依赖不提交
 node_modules/
 
+## package-lock.json 不提交
+package-lock.json
+
 ## 打包后的文件不提交
 dist/
 dist.zip
