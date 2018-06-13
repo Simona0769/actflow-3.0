@@ -107,5 +107,8 @@ febuild actname prod
 8、关于自定义模版   
    1）在src/tempaltes新建一个文件夹，用来装载模版，然后使用新建命令 fecreate -t 您的模版名 -n 您的活动名    
    2）模版中的页面依赖配置请查看问题5，若使用ejs，可参考问题6   
+   
+9、对应项目js文件文件夹不存在，browserSync任务会报错误：Did you forget to signal async completion？    
+   保证js文件夹存在，后续寻找解决方案
 
 
