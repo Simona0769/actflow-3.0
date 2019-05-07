@@ -23,14 +23,15 @@
     "devDependencies": {
         "babel-cli": "^6.26.0",
         "babel-preset-env": "^1.6.1",
-        "browser-sync": "^2.23.6",
+        "browser-sync": "^2.26.3",
         "del": "^3.0.0",
-        "gulp": "github:gulpjs/gulp#4.0",
+        "gulp": "^4.0.0",
         "gulp-autoprefixer": "^5.0.0",
         "gulp-cached": "^1.1.1",
         "gulp-changed": "^3.2.0",
         "gulp-clean-css": "^3.9.3",
         "gulp-ejs": "^3.1.3",
+        "gulp-htmlmin": "^5.0.1",
         "gulp-if": "^2.0.2",
         "gulp-load-plugins": "^1.5.0",
         "gulp-remember": "^1.0.1",
@@ -47,6 +48,7 @@
     },
     "dependencies": {
         "commander": "^2.14.1",
-        "link": "^0.1.5"
+        "link": "^0.1.5",
+        "node-sass": "^4.11.0"
     }
 }
